@@ -12,8 +12,8 @@ TTGO Paxcounter mit Feinstaubsensor und BME280
  6. Änderungen eintragen 
  7. Decoder & Konverter
  8. Kompilieren und hochladen 
- 9. Ausblick 1 node-Red, InfluxDB und Grafana   *in Arbeit*
- 10. Ausblick 2 luftdaten & openSenseMap        *in Arbeit*
+ 9. Ausblick 1 node-Red, InfluxDB und Grafana   *(in Arbeit)*
+ 10. Ausblick 2 luftdaten & openSenseMap        *(in Arbeit)*
 
 --------------------
 
