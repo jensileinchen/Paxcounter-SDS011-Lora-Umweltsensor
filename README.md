@@ -1,6 +1,7 @@
 # Paxcounter-SDS011-Lora-Umweltsensor
 TTGO Paxcounter mit Feinstaubsensor und BME280
 
+
 ## INHALT:
 
  1. Hardware 
@@ -29,28 +30,30 @@ Die Stiftleisten werden am Paxcounter-Board und am BME Sensor angelötet, je nac
 
 *Der Umweltsensor wird folgendermaßen verdrahtet:*
 
-    VCC (VDC 3,3 Volt) wird mit Pin 3.3V angeschlossen
-    GND (Ground) wird mit dem GND am Paxcounter verbunden
-    SCL (i2c Bus) --> Pin 22 am Paxcounter (mit SCL oder 22 beschriftet) 
-    SDA (i2c Bus) --> Pin 21 am Paxcounter (mit SDA oder 21 beschriftet)
+    VCC (VDC 3,3 Volt) wird mit Pin 3.3V angeschlossen                           ORANGE
+    GND (Ground) wird mit dem GND am Paxcounter verbunden                        GELB
+    SCL (i2c Bus) --> Pin 22 am Paxcounter (mit SCL oder 22 beschriftet)         GRÜN
+    SDA (i2c Bus) --> Pin 21 am Paxcounter (mit SDA oder 21 beschriftet)         BLAU
     frei
     frei
 
 *Der Feinstaubsensor wird folgendermaßen verdrahtet:*
 
-    TXD (Daten senden) wird mit Pin 23 am Paxcounter verbunden
-    RXD (Daten empfangen) wird mit Pin LoRa2 am Paxcounter verbunden
-    GND (Ground) wird mit einem weiteren Pin GND am Paxcounter angeschlossen
+    TXD (Daten senden) wird mit Pin 23 am Paxcounter verbunden                  WEISS     
+    RXD (Daten empfangen) wird mit Pin LoRa2 am Paxcounter verbunden            SCHWARZ
+    GND (Ground) wird mit einem weiteren Pin GND am Paxcounter angeschlossen    BRAUN
     frei
-    VCC (VDC 5 Volt) kommt an den 5 Volt Pin (beschriftet mit 5V)
+    VCC (VDC 5 Volt) kommt an den 5 Volt Pin (beschriftet mit 5V)               ROT
     frei
     frei
 
 > *Schaut Euch bitte die Bilder im Ordner /IMG an, da kann man nochmal
-> deutlich die Verdrahtung erkennen ! Für einen stabilen Halt der
-> Verbindungskabel auf der Stiftleiste empfehlen wir, die Stecker
-> einfach mit etwas Heisskleber zu fixieren. So vermeidet man eine ganze
-> Weile das abrutschen der teilwese recht locker sitzenden Kabel.*
+> deutlich die Verdrahtung erkennen ! Die im Beispiel verwendeten 
+> Kabelfarben habe ich für Euch in dem Verdrahtungsplan aufgeführt !
+> Für einen stabilen Halt der > Verbindungskabel auf der Stiftleiste 
+> empfehlen wir, die Stecker einfach mit etwas Heisskleber zu fixieren. 
+> So vermeidet man eine ganze Weile das abrutschen der teilwese recht 
+> locker sitzenden Kabel.*
 -----------------------------
 **thethingsnetwork**
 
