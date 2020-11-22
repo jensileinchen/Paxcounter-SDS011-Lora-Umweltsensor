@@ -1,7 +1,6 @@
 # Paxcounter-SDS011-Lora-Umweltsensor
 TTGO Paxcounter mit Feinstaubsensor und BME280
 
-
 ## INHALT:
 
  1. Hardware 
@@ -30,22 +29,22 @@ Die Stiftleisten werden am Paxcounter-Board und am BME Sensor angelötet, je nac
 
 *Der Umweltsensor wird folgendermaßen verdrahtet:*
 
-VCC (VDC 3,3 Volt) wird mit Pin 3.3V angeschlossen
-GND (Ground) wird mit dem GND am Paxcounter verbunden
-SCL (i2c Bus) --> Pin 22 am Paxcounter (mit SCL oder 22 beschriftet) 
-SDA (i2c Bus) --> Pin 21 am Paxcounter (mit SDA oder 21 beschriftet)
-frei
-frei
+    VCC (VDC 3,3 Volt) wird mit Pin 3.3V angeschlossen
+    GND (Ground) wird mit dem GND am Paxcounter verbunden
+    SCL (i2c Bus) --> Pin 22 am Paxcounter (mit SCL oder 22 beschriftet) 
+    SDA (i2c Bus) --> Pin 21 am Paxcounter (mit SDA oder 21 beschriftet)
+    frei
+    frei
 
 *Der Feinstaubsensor wird folgendermaßen verdrahtet:*
 
-TXD (Daten senden) wird mit Pin 23 am Paxcounter verbunden
-RXD (Daten empfangen) wird mit Pin LoRa2 am Paxcounter verbunden
-GND (Ground) wird mit einem weiteren Pin GND am Paxcounter angeschlossen
-frei
-VCC (VDC 5 Volt) kommt an den 5 Volt Pin (beschriftet mit 5V)
-frei
-frei
+    TXD (Daten senden) wird mit Pin 23 am Paxcounter verbunden
+    RXD (Daten empfangen) wird mit Pin LoRa2 am Paxcounter verbunden
+    GND (Ground) wird mit einem weiteren Pin GND am Paxcounter angeschlossen
+    frei
+    VCC (VDC 5 Volt) kommt an den 5 Volt Pin (beschriftet mit 5V)
+    frei
+    frei
 
 > *Schaut Euch bitte die Bilder im Ordner /IMG an, da kann man nochmal
 > deutlich die Verdrahtung erkennen ! Für einen stabilen Halt der
@@ -208,4 +207,3 @@ Parallel dazu öffnet man also im Browser die TTN-Application, wählt das Device
 -----------------------------
 **Ausblick 2 - OpenData Karten, luftdaten und opensensemap**
 *hier folgt der Text noch*
-
