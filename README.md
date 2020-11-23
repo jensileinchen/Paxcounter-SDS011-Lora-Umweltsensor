@@ -1,3 +1,5 @@
+![der Lora-Feinstaubsensor](https://github.com/jensileinchen/Paxcounter-SDS011-Lora-Umweltsensor/blob/main/IMG/Lora-Feinstaub-Sensor_.jpg)
+ 
 # Paxcounter-SDS011-Lora-Umweltsensor
 TTGO Paxcounter mit Feinstaubsensor und BME280
 
@@ -210,3 +212,4 @@ Parallel dazu öffnet man also im Browser die TTN-Application, wählt das Device
 -----------------------------
 **Ausblick 2 - OpenData Karten, luftdaten und opensensemap**
 *hier folgt der Text noch*
+
