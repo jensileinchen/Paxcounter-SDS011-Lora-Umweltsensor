@@ -21,9 +21,16 @@ TTGO Paxcounter mit Feinstaubsensor und BME280
 
 **Hardware:**
 
- - TTGO ESP32 Paxcounter (für Deutschland EU868 Variante)
+ - TTGO ESP32 Paxcounter (für Deutschland **EU868** Variante)
  - Feinstaubsensor nova PM sensor Typ SDS011 
  - Umweltsensor BME280 (Temperatur, Luftfeuchtigkeit und Druck)
+
+
+ *optionale Komponenten, je nach Standort und Gehäusewunsch:*
+ - als Gehäuse 2 Stück HT-Rohr DN75 Bögen (87°) aus dem lokalen Baumarkt
+ - Antennenkabel als Verlängerung SMA Buchse auf SMA Stecker 30cm  (dann kann man die Antenne nach außen legen ( Ø 6,5 mm Loch bohren)
+ - USB-Kabel (z.B. 5m ) zur Stromversorgung und Steckernetzteil (5V / 2 A)
+
 -----------------------------
 
 **Zusammenbau / Verdrahtung**
@@ -55,7 +62,10 @@ Die Stiftleisten werden am Paxcounter-Board und am BME Sensor angelötet, je nac
 > Für einen stabilen Halt der > Verbindungskabel auf der Stiftleiste 
 > empfehlen wir, die Stecker einfach mit etwas Heisskleber zu fixieren. 
 > So vermeidet man eine ganze Weile das abrutschen der teilwese recht 
-> locker sitzenden Kabel.*
+> locker sitzenden Kabel. Im Bilder-Ordner kann man nun auch den 
+> empfohlenen Zusammenbau erkennen, den ich für Euch dokumentiert habe.
+> Wir haben uns da grundsätzlich an das Projekt aus Stuttgart gehalten, 
+> aber ein wenig modifiziert*
 -----------------------------
 **thethingsnetwork**
 
@@ -212,4 +222,5 @@ Parallel dazu öffnet man also im Browser die TTN-Application, wählt das Device
 -----------------------------
 **Ausblick 2 - OpenData Karten, luftdaten und opensensemap**
 *hier folgt der Text noch*
+
 
