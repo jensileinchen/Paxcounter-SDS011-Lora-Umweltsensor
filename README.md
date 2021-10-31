@@ -1,3 +1,4 @@
+
 ![der Lora-Feinstaubsensor](https://github.com/jensileinchen/Paxcounter-SDS011-Lora-Umweltsensor/blob/main/IMG/Lora-Feinstaub-Sensor_.jpg)
  
 # Paxcounter-SDS011-Lora-Umweltsensor
@@ -8,11 +9,11 @@ TTGO Paxcounter mit Feinstaubsensor und BME280
 
  1. Hardware 
  2. Zusammenbau / Verdrahtung 
- 3. thethingsnetwork 
+ 3. thethingsnetwork  --- *`wird aktuell überarbeitet für v.3 Stack CE`*
  4. Software
  5. github-Repository 
  6. Änderungen eintragen 
- 7. Decoder & Konverter
+ 7. Decoder & Konverter  --- *`wird aktuell überarbeitet für v.3 Stack CE`*
  8. Kompilieren und hochladen 
  9. Ausblick 1 node-Red, InfluxDB und Grafana   *(in Arbeit)*
  10. Ausblick 2 luftdaten & openSenseMap        *(in Arbeit)*
@@ -68,7 +69,7 @@ Die Stiftleisten werden am Paxcounter-Board und am BME Sensor angelötet, je nac
 > aber ein wenig modifiziert*
 -----------------------------
 **thethingsnetwork**
-
+  --- *`wird aktuell überarbeitet für v.3 Stack CE`*
 Im nächsten Schritt bereiten wir unseren Account bei thethingsnetwork.org vor -- Zuerst wird (sofern nicht schon vorhanden) ein Account angelegt. Anschließend wird eine neue Application erstellt. Neben einem eindeutigen Namen wird hier nur noch der ttn-Handler als "ttn-handler-eu" eingetragen. 
 
 Innerhalb dieser Application legen wir unser Device an - also quasi unseren TTN Feinstaubsensor. Dazu klicken wir auf "register device". Im nächsten Fenster vergeben wir einen kurzen, eindeutigen Namen, beispielsweise "Feinstaubsensor-01" -- die DeviceEUI lassen wir uns automatisch generieren. Dazu klicken wir auf den Doppelpfeil vor dem entsprechenden Feld. Mehr wird an dieser Stelle nicht benötigt, später kann man noch den Standort und ähnliche Daten zum Gerät hinterlegen, wenn man möchte. Das Browser-Fenster mit "Device Overview" lassen wir auf, es wird später benötigt !
@@ -181,7 +182,7 @@ ausserdem müssen wir Zeile 113 ändern in:
     }
 -----------------------------
 **Decoder und Converter**
-
+  --- *`wird aktuell überarbeitet für v.3 Stack CE`*
 Zum Abschluß der Software-Änderungen holen wir uns noch aus dem nachfolgenden per Copy & Paste /src/TTN/packed_converter.js -> Payload Formats -> converter den Inhalt dieser Datei und gehen zurück in das Browserfenster. In den Eigenschaften der TTN Application gehen wir auf den Reiter "Payload Formats" und wählen dort zum Einfügen den Converter aus. Sollte im Fenster dort schon Text stehen wird dieser zuerst einfach vollständig gelöscht und dann der Text aus der o.g. Datei dort eingefügt.
 
 Danach holen wir uns im VS Code den Decoder aus der Datei /src/TTN/packed_decoder.js und kopieren diesen genau wie eben aber in das Feld "Payload Formats -> decoder" Hier ist noch eine kleine, manuelle Änderung nötig: 
@@ -213,6 +214,7 @@ Klickt man nun noch in der blauen Leiste auf das Stecker-Symbol "Serial Monitor"
 > zwar in die Umgebund gesendet, diese aber nirgendwo empfangen werden
 > und weiter verarbeitet werden.
 
+  --- *`wird aktuell überarbeitet für v.3 Stack CE`*
 Parallel dazu öffnet man also im Browser die TTN-Application, wählt das Device aus und klickt oben rechts auf das "Data" Feld. nach einer kurzen Weile sollten auch hier Daten angezeigt werden, die zu thethingsnetwork per Lora Funktechnik übertragen werden. Hinweis, da die Feinstaubwerte als "Ganzahl" übertragen werden, müssen die in der TTN-Konsole angezeigten Messwerte durch 10 geteilt werden !!! Herzlichen Glückwunsch, Euer Lora-Feinstaubsensor ist fertig !!! In zwei weiteren Kapiteln geben wir einen Ausblick, was mit den gewonnenen Daten gemacht werden kann, und wie man selbige auf Opendata Karten veröffentlichen kann.
 
 -----------------------------
