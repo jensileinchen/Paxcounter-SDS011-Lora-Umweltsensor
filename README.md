@@ -86,7 +86,12 @@ Zur Programmierung verwenden wir Microsoft Visual Studio Code mit der Erweiterun
 **github-Repository**
 
 Als Basissoftware verwenden wir seit einiger Zeit das Repository von Cybmerman54 aus github. 
-https://github.com/cyberman54/ESP32-Paxcounter
+https://github.com/cyberman54/ESP32-Paxcounter/releases
+
+
+>Wichtiger Hinweis: Da auch dieses Repo stark überarbeitet wurde scheint ab Version 3.2 die Anbindung vom Feinstaubsensor über die serielle Schnittstelle, so wie in unserer Anleitung beschrieben, nicht mehr zu funktionieren. Ladet Euch daher die Version 3.1 herunter um den Umweltsensor auf Basis vom TTGo Paxcounter Board zubauen !!! 
+>
+
 Das Repository wird heruntergeladen und entpackt, anschließend im VS Code geöffnet.
 
 -----------------------------
@@ -224,5 +229,6 @@ Parallel dazu öffnet man also im Browser die TTN-Application, wählt das Device
 -----------------------------
 **Ausblick 2 - OpenData Karten, luftdaten und opensensemap**
 *hier folgt der Text noch*
+
 
 
